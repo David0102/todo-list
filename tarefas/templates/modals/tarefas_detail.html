@@ -1,0 +1,21 @@
+<div class="modal fade" id="tarefaDetail{{tarefa.id}}" tabindex="-1" aria-labelledby="tarefaDetailLabel{{tarefa.id}}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="tarefaDetailLabel{{tarefa.id}}">Detalhes da tarefa</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <input style="color: #fff; font-weight: bold;" type="text" name="titulo" value="{{tarefa.titulo}}" readonly disabled>
+            <textarea style="color: #fff; font-weight: bold;" name="descricao" rows="5" readonly disabled>{{tarefa.descricao}}</textarea>
+            <input style="color: #fff; font-weight: bold;" type="date" value="{{tarefa.data_criacao|date:'Y-m-d'}}" readonly disabled>
+            <input style="color: #fff; font-weight: bold;" type="text" value="{{tarefa.status}}" readonly disabled>
+            {% if tarefa.status == 'pendente' %}
+            <a class="concluir-tarefa-btn" href="{% url 'tarefas_update_status' tarefa.id %}">Concluir tarefa</a>
+            {% endif %}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

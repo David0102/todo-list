@@ -1,0 +1,136 @@
+.navbar{
+    background-color: rgba(51, 73, 96, 0.83);
+    height: 70px;
+}
+
+.navbar-brand span{
+    font-size: 24px;
+    color: #fff;
+}
+
+.collapse{
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-nav{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-item span{
+    color: #fff;
+}
+
+.logout:hover{
+    background-color: rgba(32, 46, 61, 0.83);
+}
+
+.nav-link i{
+    color: #fff;
+}
+
+.todo-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+}
+
+.todo-content h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.todo-list-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 1em;
+    overflow: auto;
+}
+
+.todo-list-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list-header span{
+    font-size: 30px;
+}
+
+.todo-list-header a{
+    padding: .3em .7em;
+    border: none;
+    background-color: rgb(49, 138, 68);
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.todo-list-header a:hover{
+    background-color: rgb(33, 100, 47);
+}
+
+.todo-list-header a i{
+    color: #fff;
+}
+
+.cards-content{
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-height: 300px;
+    overflow: auto;
+    padding: 1em .3em;
+    border-top: 2px solid rgba(51, 73, 96, 0.83);
+    border-bottom: 2px solid rgba(51, 73, 96, 0.83);
+}
+
+.card-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em .8em;
+    border-radius: 20px;
+    border: 1px solid #ececec;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.card-task-name-content{
+    max-width: 58px;
+    white-space: nowrap;
+    overflow: auto;
+}
+
+.card-task-name{
+    font-size: 16px;
+    max-width: 200px;
+}
+
+.card-task-date{
+    font-size: 15px;
+}
+
+.card-actions{
+    display: flex;
+    gap: .7em;
+}
+
+.card-actions a{
+    transition: .1s;
+}
+
+.card-actions a:hover{
+    transform: scale(1.1);
+}
+
+.card-actions a i{
+    font-size: 17px;
+}

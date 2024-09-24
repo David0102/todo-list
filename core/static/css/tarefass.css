@@ -1,0 +1,60 @@
+.modal-header{
+    background-color: rgba(51, 73, 96, 0.83);
+}
+
+.modal-header h1{
+    color: #fff;
+}
+
+.modal-body{
+    background-color: rgba(51, 73, 96, 0.83);
+}
+
+.modal-body form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+}
+
+.modal-body form input, .modal-body form textarea{
+    width: 100%;
+    border: 1px solid rgb(192, 192, 192);
+    outline: none;
+    font-size: 14px;
+    padding: .3em .4em;
+
+}
+
+.modal-body form input:focus, .modal-body form textarea:focus{
+    border-color: rgb(47, 169, 218);
+}
+
+.criar-tarefa-btn{
+    background-color: rgb(49, 138, 68);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.criar-tarefa-btn:hover{
+    background-color: rgb(33, 100, 47);
+}
+
+
+.concluir-tarefa-btn{
+    margin-top: .5em;
+    background-color: aqua;
+    padding: .3em .4em;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(49, 138, 68);
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.concluir-tarefa-btn:hover{
+    background-color: rgb(33, 100, 47);
+}
