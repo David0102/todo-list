@@ -48,8 +48,9 @@ def cadastro(request):
         if user_exists:
             messages.error(request, 'Usuário já cadastrado no sistema.')
             return redirect('cadastro')
-
-        query_insert = f"INSERT INTO user_usuario (name, username, password, is_authenticated) VALUES ('{name}', '{username}', '{password}', 'False')"
+        
+        nome_usuario = username.split("'")[0]
+        query_insert = f"INSERT INTO user_usuario (name, username, password, is_authenticated) VALUES ('{name}', '{nome_usuario}', '{password}', 'False')"
         with connection.cursor() as cursor:
             cursor.execute(query_insert)
 
