@@ -22,19 +22,19 @@ python -m venv venv
 
 ### 4. Ative o ambiente virtual:
 
-<li>Windows<\li>
+<li>Windows
   
 ```bash
 venv\Scripts\activate
 
 ```
-<li>Linux<\li>
+<li>Linux
   
 ```bash
 source venv/bin/activate
 ```
 
-### 5. Instale as dependência:
+### 5. Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
