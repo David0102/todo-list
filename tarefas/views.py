@@ -71,9 +71,13 @@ def remover_tarefa(request, id):
 
             with connection.cursor() as cursor:
                cursor.execute(query)
-            
-            messages.success(request, 'Tarefa removida com sucesso.')
-            return redirect('index')
+               rows_affected = cursor.rowcount
+
+            if rows_affected > 0: 
+               messages.success(request, 'Tarefa removida com sucesso.')
+               return redirect('index')
+            else:
+               raise Http404('Tarefa não encontrada')
          else:
             return redirect('login')
       except Usuario.DoesNotExist:
