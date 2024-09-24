@@ -22,7 +22,6 @@ def criar_tarefa(request):
                user_id = user.id
 
                query = f"INSERT INTO tarefas (data_criacao, status, user_id, titulo, descricao) VALUES ('{data_atual}', 'pendente', '{user_id}', '{titulo}', '{descricao}');"
-               print(query)
                with connection.cursor() as cursor:
                   cursor.execute(query)
                
